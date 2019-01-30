@@ -12,9 +12,20 @@
 
   <body>
     <%= render "layouts/header"%>
-    <div id="main">
-      <%= yield %>
+    <%= render "layouts/parallaxup"%>
+
+    <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <%= yield %>
+        </div>
+      </div>
+
     </div>
-    
+  </div>
+    <%= render "layouts/parallaxdown"%>
+    <%= render "layouts/footer"%>
   </body>
 </html>

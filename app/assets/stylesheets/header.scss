@@ -1,3 +1,17 @@
 #logo-container, #lista {
-    color: #cb3a41
+    color: #cb3a41;
 }
+
+i.material-icons {
+    color: #cb3a41;
+}
+
+@media screen and(min-width: 1200px){
+	.white{
+		height: 100px;
+	}
+	#logo-container, #lista {
+    margin: 15px;
+}
+}
+
