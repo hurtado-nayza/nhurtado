@@ -4,7 +4,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a id="lista" href="#">¿Quien soy?</a></li>
         <li><a id="lista" href="#">¿Que hago?</a></li>
-        <li><a id="lista" href="#">¿Donde encontrarme?</a></li>
+        <li><%= link_to 'Contacto', new_contact_path, id: 'lista'%></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -25,3 +25,4 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 </script>
+
