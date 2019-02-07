@@ -19,8 +19,8 @@ class ContactsController < ApplicationController
 	    respond_to do |format|
 	      if @contact.valid?
 	        if @contact.save
-	          format.html { redirect_to @contact, notice: 'Enviado' }
-	          format.json { render :show, status: :created, location: @contact }
+	          format.html { redirect_to root_path, notice: 'Enviado' }
+	          #format.json { render :show, status: :created, location: @contact }
 	        else
 	          format.html { render :new }
 	          format.json { render json: @contact.errors, status: :unprocessable_entity }

@@ -1,42 +1,44 @@
+<h5>CONTACTAME</h5>
+<h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, sint autem iusto illo deleniti cum illum, deserunt omnis consectetur, totam eum qui dolorum eius ab laborum? Assumenda explicabo, labore eligendi. </h6>
+<br>
 <%= form_for @contact do |form| %>
-
-<div class="control-group<%= @contact.errors[:name].any? ? " error" : "" %> col-sm-12 col-md-10 col-lg-8">
-    <%= form.label :name, class: 'control-label'%>
-    <div class="controls">
-      <%= form.text_field :name, autofocus: true, :maxlength => '50', :class => 'form-control'%>
-      <span class="help-inline text-danger">
+<div class="control-group<%= @contact.errors[:name].any? ? " error" : "" %> col l12 s12 ">
+    <div class="input-field col l6 m8 s12">
+      <%= form.label :name, class: 'control-label'%>
+      <%= form.text_field :name, autofocus: true, maxlength: '50'%>
+      <span class="helper-text col s6" data-error="wrong" data-success="right">
         <%= @contact.errors[:name].any? ? @contact.errors[:name].to_s[/\w([^"]*)/] : "" %></span>
     </div>
 </div>
 <br>
-<div class="control-group<%= @contact.errors[:email].any? ? " error" : "" %> col-sm-12 col-md-10 col-lg-8">
-    <%= form.label :email, class: 'control-label'%>
-    <div class="controls">
-      <%= form.text_field :email, autofocus: true, :maxlength => '50', :class => 'form-control'%>
-      <span class="help-inline text-danger">
+<div class="control-group<%= @contact.errors[:email].any? ? " error" : "" %> col l12 s12 ">
+    <div class="input-field col l6 m8 s12">
+      <%= form.label :email, class: 'control-label'%>
+      <%= form.email_field :email, maxlength: '50', class: 'validate'%>
+      <span class="helper-text col s6" data-error="incorrecto" data-success="correcto">
         <%= @contact.errors[:email].any? ? @contact.errors[:email].to_s[/\w([^"]*)/] : "" %></span>
     </div>
 </div>
 <br>
-<div class="control-group<%= @contact.errors[:phone].any? ? " error" : "" %> col-sm-12 col-md-10 col-lg-8">
-    <%= form.label :phone, class: 'control-label'%>
-    <div class="controls">
-      <%= form.text_field :phone, autofocus: true, :maxlength => '50', :class => 'form-control'%>
-      <span class="help-inline text-danger">
+<div class="control-group<%= @contact.errors[:phone].any? ? " error" : "" %> col l12 s12">
+    <div class="input-field col l6 m8 s12">
+      <%= form.label :phone, class: 'control-label'%>
+      <%= form.text_field :phone, maxlength: '17'%>
+      <span class="helper-text col s6" data-error="wrong" data-success="right">
         <%= @contact.errors[:phone].any? ? @contact.errors[:phone].to_s[/\w([^"]*)/] : "" %></span>
     </div>
 </div>
 <br>
-<div class="control-group<%= @contact.errors[:message].any? ? " error" : "" %> col-sm-12 col-md-10 col-lg-8">
-    <%= form.label :message, class: 'control-label'%>
-    <div class="controls">
-      <%= form.text_area :message, autofocus: true, :maxlength => '50', :class => 'form-control'%>
-      <span class="help-inline text-danger">
+<div class="control-group<%= @contact.errors[:message].any? ? " error" : "" %> col l12 s12">
+    <div class="input-field col l6 m8 s12">
+      <%= form.label :message, class: 'control-label'%>
+      <%= form.text_area :message, class: 'materialize-textarea'%>
+      <span class="helper-text col s6" data-error="wrong" data-success="right">
         <%= @contact.errors[:message].any? ? @contact.errors[:message].to_s[/\w([^"]*)/] : "" %></span>
     </div>
 </div>
 <br>
-<div class="actions col-sm-12 col-md-10 col-lg-8">
-   <%= form.submit "Enviar", class: 'btn btn-info'%>
+<div class="col l6 m8 s12", align="right">
+   <%= form.submit "Enviar", class: 'boton' %>
 </div>
 <%end%>

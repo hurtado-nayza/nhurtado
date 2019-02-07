@@ -1,0 +1,31 @@
+body{
+	font-family: monospace;
+}
+
+.img{
+	width: 30px;
+	height: 30px;
+}
+
+.home{
+	height: 700px;
+}
+
+.boton {
+    text-decoration: none;
+    color: #fff;
+    background-color: #cb3a41;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
