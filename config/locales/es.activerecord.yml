@@ -1,0 +1,8 @@
+es:
+  activerecord:
+    attributes:
+      contact:
+        name: 'Nombre'
+        email: 'Email'
+        phone: 'Teléfono'
+        message: 'Mensaje'
