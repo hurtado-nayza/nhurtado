@@ -1,9 +1,9 @@
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <%= link_to 'NAH.', root_path, id: 'logo-container', class: 'brand-logo'%>
+      <%= link_to 'NH', root_path, id: 'logo-container', class: 'brand-logo'%>
       <ul class="right hide-on-med-and-down">
         <li><a id="lista" href="#">Portafolio</a></li>
-        <li><%= link_to 'Contactame', new_contact_path, id: 'lista'%></li>
+        <li><%= link_to 'Contáctame', new_contact_path, id: 'lista'%></li>
         <li><a id="lista" href="#">Sobre mí</a></li>
         <% if signed_in? %>
           <li><%= link_to 'Comentarios', contacts_path, id: 'lista'%></li>
@@ -17,14 +17,14 @@
           <div class="background">
             <%= image_tag("back.png")%>
           </div>
-          <a href="#user"><%= image_tag("n1.png", class: 'circle')%></a>
+          <a href="#user"><%= image_tag("logosx.png", class: 'circle')%></a>
           <a href="#name"><span class="name" id="lista">Nayzareth Hurtado</span></a>
           <a href="#phone"><span class="phone" id="lista">+58 414 8076973</span></a>
           <a href="#email"><span class="email" id="lista">hurtado.nayza@gmail.com</span></a>
         </div></li>
 
         <li><a id="lista" href="#">Portafolio</a></li>
-        <li><%= link_to 'Contactame', new_contact_path, id: 'lista'%></li>
+        <li><%= link_to 'Contáctame', new_contact_path, id: 'lista'%></li>
         <li><a id="lista" href="#">Sobre mí</a></li>
         <% if signed_in? %>
           <li><%= link_to 'Comentarios', contacts_path, id: 'lista'%></li>
