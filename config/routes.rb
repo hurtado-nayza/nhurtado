@@ -7,4 +7,5 @@ Rails.application.routes.draw do
       }
 
     resources :contacts, :except => [:edit, :update, :destroy]
+    resources :aboutme, :only => [:index]
 end
