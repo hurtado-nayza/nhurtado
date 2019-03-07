@@ -5,7 +5,6 @@ ruby '2.6.0'
 
 
 gem 'rails', '~> 5.2.2'
-gem 'sqlite3', '~> 1.3.6'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -25,6 +24,10 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3', '~> 1.3.6'
+end
+
+group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
@@ -38,8 +41,8 @@ group :test do
 end
 
 group :production do
-  #gem 'pg'
-  #gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
